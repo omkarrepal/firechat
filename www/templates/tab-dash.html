@@ -1,0 +1,25 @@
+<ion-view view-title="Dashboard" view-cache="true">
+  <ion-content class="padding">
+
+    <div class="row" ng-show="loading">
+      <div class="col text-center">
+        <ion-spinner icon="spiral"></ion-spinner>
+        <div class="text-center">Connecting</div>
+      </div>
+    </div>
+    <div class="row" ng-hide="loading">
+      <div class="col text-center">
+        <i class="ion-icon ion-checkmark" style="font-size:50px"></i>
+        <div class="text-center">Connected!</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <button class="button button-light ion-social-facebook" style="color:#3b5998;font-size:20px" ng-click="fbAuth()" ng-hide="login_success"> Login with Facebook
+        </button>
+
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
